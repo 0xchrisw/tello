@@ -34,7 +34,7 @@ classifiers = [
 dependencies = [
   "djitellopy",
   # "ultralytics",
-  "opencv-python",
+  "opencv-python == 4.5.1.48",
   "transformers",
   "timm",
   "torch",
