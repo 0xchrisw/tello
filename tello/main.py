@@ -89,9 +89,10 @@ def main():
 
     tello = Tello()
     tello.connect(wait_for_state=False)  # BUG: https://github.com/damiafuentes/DJITelloPy/issues/71#issuecomment-769790211
-    time.sleep(2)
+    print(tello.get_battery())
 
     tello.streamon()
+    time.sleep(3)
 
     keep_recording = True
     recording_time = 15  # seconds
