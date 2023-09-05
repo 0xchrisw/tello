@@ -89,7 +89,6 @@ def main():
 
     tello = Tello()
     tello.connect(wait_for_state=False)  # BUG: https://github.com/damiafuentes/DJITelloPy/issues/71#issuecomment-769790211
-    print(tello.get_battery())
 
     tello.streamon()
     time.sleep(3)
@@ -113,6 +112,7 @@ def main():
     # tello.rotate_counter_clockwise(360)
 
     tello.land()
+    time.sleep(10)
 
     tello.streamoff()
     recorder.join()
