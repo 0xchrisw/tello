@@ -16,7 +16,7 @@ version         = "0.0.1"
 description     = "Experiments with the Ryze tello drone from DJI"
 readme          = "README.md"
 license         = "MIT"
-requires-python = ">=3.10"
+requires-python = ">=3.9"
 
 authors = [
   { name = "Christopher Woodall", email = "woodall.christopher@gmail.com" },
