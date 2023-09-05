@@ -1,30 +1,27 @@
 # tello
-Experiments with the Ryze tello drone from DJI
+Experiments with the Ryze tello drone.
 
 
 ## Setup
 
-```bash
-venv venv
-. venv/bin/activate
-pip install -r requirements.txt
-```
+You may need to initially run the script with a direct connection to the internet in order to populate the model `cache` directory.
 
-**TODO:** Instructions for IOT network repeater.
+```bash
+virtualenv venv --python=python3.10
+. venv/bin/activate
+pip install --editable .
+```
 
 
 ## Usage
 
 ```bash
-python tello.py
+tello-example --model_name "facebook/detr-resnet-50"
 ```
 
 
 ## Links
   - [Alternative Firmware](https://github.com/MrJabu/RyzeTelloFirmware)
   - [Awesome List](https://github.com/Matthias84/awesome-tello)
-
-
-## Official SDK
   - [Android APK](https://service-adhoc.dji.com/download/app/android/ba88a046-6f7e-4cbb-a969-27851eb4bbf5)
   - [Python Example](https://github.com/damiafuentes/DJITelloPy/blob/master/examples/record-video.py)
